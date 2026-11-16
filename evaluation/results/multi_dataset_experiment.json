@@ -1,0 +1,483 @@
+{
+  "elapsed_sec": 264.4,
+  "taxonomy": [
+    {
+      "dataset": "BAR-ATH Public Slice (17 spells)",
+      "frames": 7500,
+      "minutes": 5.0,
+      "pct_H": 46.1,
+      "pct_A": 34.4,
+      "pct_D": 19.6,
+      "spells_per_min": 3.4,
+      "median_spell_sec": 7.56,
+      "pct_spells_under_2s": 11.8,
+      "ball_vis_live_pct": 93.5,
+      "ball_vis_dead_pct": 66.4,
+      "frozen_ball_on_D_pct": 0.0,
+      "oob_on_D_pct": 6.8,
+      "p85_speed_live": 3.34,
+      "p85_speed_dead": 1.62
+    },
+    {
+      "dataset": "Metrica G1 (Continuous GT)",
+      "frames": 142074,
+      "minutes": 94.7,
+      "pct_H": 31.7,
+      "pct_A": 29.1,
+      "pct_D": 39.2,
+      "spells_per_min": 4.05,
+      "median_spell_sec": 4.14,
+      "pct_spells_under_2s": 24.5,
+      "ball_vis_live_pct": 97.0,
+      "ball_vis_dead_pct": 8.1,
+      "frozen_ball_on_D_pct": 0.0,
+      "oob_on_D_pct": 0.1,
+      "p85_speed_live": 3.14,
+      "p85_speed_dead": 1.49
+    },
+    {
+      "dataset": "DFL J03WMX (Official Micro-Touch GT)",
+      "frames": 145967,
+      "minutes": 97.3,
+      "pct_H": 26.8,
+      "pct_A": 31.7,
+      "pct_D": 41.5,
+      "spells_per_min": 5.25,
+      "median_spell_sec": 3.0,
+      "pct_spells_under_2s": 37.4,
+      "ball_vis_live_pct": 100.0,
+      "ball_vis_dead_pct": 100.0,
+      "frozen_ball_on_D_pct": 99.8,
+      "oob_on_D_pct": 54.6,
+      "p85_speed_live": 3.42,
+      "p85_speed_dead": 1.48
+    },
+    {
+      "dataset": "DFL J03WMX (Harmonized Continuous GT)",
+      "frames": 145967,
+      "minutes": 97.3,
+      "pct_H": 26.7,
+      "pct_A": 31.8,
+      "pct_D": 41.5,
+      "spells_per_min": 3.81,
+      "median_spell_sec": 5.08,
+      "pct_spells_under_2s": 21.0,
+      "ball_vis_live_pct": 100.0,
+      "ball_vis_dead_pct": 100.0,
+      "frozen_ball_on_D_pct": 99.8,
+      "oob_on_D_pct": 54.6,
+      "p85_speed_live": 3.42,
+      "p85_speed_dead": 1.48
+    },
+    {
+      "dataset": "SkillCorner 1886347 (Raw Group GT)",
+      "frames": 147604,
+      "minutes": 98.4,
+      "pct_H": 31.2,
+      "pct_A": 23.1,
+      "pct_D": 45.6,
+      "spells_per_min": 3.52,
+      "median_spell_sec": 5.08,
+      "pct_spells_under_2s": 26.3,
+      "ball_vis_live_pct": 93.3,
+      "ball_vis_dead_pct": 21.6,
+      "frozen_ball_on_D_pct": 0.3,
+      "oob_on_D_pct": 4.5,
+      "p85_speed_live": 3.62,
+      "p85_speed_dead": 0.0
+    },
+    {
+      "dataset": "SkillCorner 1886347 (Phase-Bridged GT)",
+      "frames": 147604,
+      "minutes": 98.4,
+      "pct_H": 32.4,
+      "pct_A": 24.0,
+      "pct_D": 43.6,
+      "spells_per_min": 2.66,
+      "median_spell_sec": 6.94,
+      "pct_spells_under_2s": 17.2,
+      "ball_vis_live_pct": 92.3,
+      "ball_vis_dead_pct": 19.4,
+      "frozen_ball_on_D_pct": 0.3,
+      "oob_on_D_pct": 4.0,
+      "p85_speed_live": 3.59,
+      "p85_speed_dead": 0.0
+    }
+  ],
+  "model_comparison_by_definition": {
+    "Metrica_3_Raw": {
+      "baseline_native": {
+        "spellF1": 0.3014,
+        "macroF1": 0.4396,
+        "f1_D": 0.0025,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.6663,
+        "macroF1": 0.8704,
+        "f1_D": 0.8649,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.6935,
+        "macroF1": 0.8785,
+        "f1_D": 0.8666,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.6689,
+        "macroF1": 0.8688,
+        "f1_D": 0.8649,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.677,
+        "macroF1": 0.8765,
+        "f1_D": 0.8666,
+        "accuracy": 0.0
+      }
+    },
+    "Metrica_3_Aug30": {
+      "baseline_native": {
+        "spellF1": 0.216,
+        "macroF1": 0.4782,
+        "f1_D": 0.1859,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.5479,
+        "macroF1": 0.7877,
+        "f1_D": 0.7583,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.5653,
+        "macroF1": 0.7913,
+        "f1_D": 0.7559,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.5595,
+        "macroF1": 0.7861,
+        "f1_D": 0.7583,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.5604,
+        "macroF1": 0.7896,
+        "f1_D": 0.7559,
+        "accuracy": 0.0
+      }
+    },
+    "Metrica_3_FOV45": {
+      "baseline_native": {
+        "spellF1": 0.1803,
+        "macroF1": 0.4292,
+        "f1_D": 0.1387,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.4191,
+        "macroF1": 0.7318,
+        "f1_D": 0.7211,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.4484,
+        "macroF1": 0.7399,
+        "f1_D": 0.7216,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.4365,
+        "macroF1": 0.731,
+        "f1_D": 0.7211,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.4535,
+        "macroF1": 0.7388,
+        "f1_D": 0.7216,
+        "accuracy": 0.0
+      }
+    },
+    "DFL_7_Clean": {
+      "baseline_native": {
+        "spellF1": 0.3344,
+        "macroF1": 0.873,
+        "f1_D": 0.9949,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.3995,
+        "macroF1": 0.645,
+        "f1_D": 0.5651,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.4666,
+        "macroF1": 0.9015,
+        "f1_D": 0.9916,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.3683,
+        "macroF1": 0.6438,
+        "f1_D": 0.5651,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.4314,
+        "macroF1": 0.8994,
+        "f1_D": 0.9916,
+        "accuracy": 0.0
+      }
+    },
+    "DFL_7_MissingBall": {
+      "baseline_native": {
+        "spellF1": 0.1711,
+        "macroF1": 0.6806,
+        "f1_D": 0.7384,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.3737,
+        "macroF1": 0.6651,
+        "f1_D": 0.6315,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.4501,
+        "macroF1": 0.8702,
+        "f1_D": 0.964,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.3865,
+        "macroF1": 0.6659,
+        "f1_D": 0.6315,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.4518,
+        "macroF1": 0.8702,
+        "f1_D": 0.964,
+        "accuracy": 0.0
+      }
+    },
+    "SkillCorner_2_Extrapolated": {
+      "baseline_native": {
+        "spellF1": 0.2097,
+        "macroF1": 0.4599,
+        "f1_D": 0.2331,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.2816,
+        "macroF1": 0.7741,
+        "f1_D": 0.8873,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.2587,
+        "macroF1": 0.7725,
+        "f1_D": 0.8877,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.3255,
+        "macroF1": 0.8067,
+        "f1_D": 0.8859,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.2878,
+        "macroF1": 0.8053,
+        "f1_D": 0.8863,
+        "accuracy": 0.0
+      }
+    },
+    "SkillCorner_2_BroadcastDet": {
+      "baseline_native": {
+        "spellF1": 0.1956,
+        "macroF1": 0.4024,
+        "f1_D": 0.081,
+        "accuracy": 0.0
+      },
+      "comp_touch_native": {
+        "spellF1": 0.287,
+        "macroF1": 0.782,
+        "f1_D": 0.9016,
+        "accuracy": 0.0
+      },
+      "adapted_touch_native": {
+        "spellF1": 0.2619,
+        "macroF1": 0.7798,
+        "f1_D": 0.9019,
+        "accuracy": 0.0
+      },
+      "comp_touch_harmonized": {
+        "spellF1": 0.323,
+        "macroF1": 0.8111,
+        "f1_D": 0.8963,
+        "accuracy": 0.0
+      },
+      "adapted_touch_harmonized": {
+        "spellF1": 0.2828,
+        "macroF1": 0.8094,
+        "f1_D": 0.8966,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "cross_dataset_transfer_matrix": {
+    "Train: Metrica (3 games)": {
+      "Metrica_Aug": {
+        "spellF1": 0.5353,
+        "macroF1": 0.8712
+      },
+      "DFL_Missing": {
+        "spellF1": 0.4868,
+        "macroF1": 0.8594
+      },
+      "SkillCorner_Det": {
+        "spellF1": 0.431,
+        "macroF1": 0.8331
+      },
+      "BAR_ATH_Holdout": {
+        "spellF1": 0.4596,
+        "macroF1": 0.8302
+      }
+    },
+    "Train: DFL Clean (w/ ball speed)": {
+      "Metrica_Aug": {
+        "spellF1": 0.3911,
+        "macroF1": 0.5071
+      },
+      "DFL_Missing": {
+        "spellF1": 0.5578,
+        "macroF1": 0.8805
+      },
+      "SkillCorner_Det": {
+        "spellF1": 0.3684,
+        "macroF1": 0.4313
+      },
+      "BAR_ATH_Holdout": {
+        "spellF1": 0.4356,
+        "macroF1": 0.5831
+      }
+    },
+    "Train: DFL Player-Only Stop": {
+      "Metrica_Aug": {
+        "spellF1": 0.4831,
+        "macroF1": 0.8127
+      },
+      "DFL_Missing": {
+        "spellF1": 0.5056,
+        "macroF1": 0.8584
+      },
+      "SkillCorner_Det": {
+        "spellF1": 0.3513,
+        "macroF1": 0.7554
+      },
+      "BAR_ATH_Holdout": {
+        "spellF1": 0.5463,
+        "macroF1": 0.8506
+      }
+    },
+    "Train: SkillCorner (Phase GT)": {
+      "Metrica_Aug": {
+        "spellF1": 0.4368,
+        "macroF1": 0.7466
+      },
+      "DFL_Missing": {
+        "spellF1": 0.4479,
+        "macroF1": 0.8375
+      },
+      "SkillCorner_Det": {
+        "spellF1": 0.5402,
+        "macroF1": 0.8839
+      },
+      "BAR_ATH_Holdout": {
+        "spellF1": 0.439,
+        "macroF1": 0.7259
+      }
+    },
+    "Train: Pooled Multi-Dataset": {
+      "Metrica_Aug": {
+        "spellF1": 0.4982,
+        "macroF1": 0.8308
+      },
+      "DFL_Missing": {
+        "spellF1": 0.48,
+        "macroF1": 0.8412
+      },
+      "SkillCorner_Det": {
+        "spellF1": 0.4317,
+        "macroF1": 0.8229
+      },
+      "BAR_ATH_Holdout": {
+        "spellF1": 0.5143,
+        "macroF1": 0.8465
+      }
+    }
+  },
+  "non_contact_2d_flyby_benchmark": [
+    {
+      "dataset": "BAR-ATH Public Holdout",
+      "flyby_events": 16,
+      "flyby_frames": 75,
+      "frame_rejection_rate": 1.0,
+      "event_rejection_rate": 1.0
+    },
+    {
+      "dataset": "Metrica Game 1 (raw)",
+      "flyby_events": 335,
+      "flyby_frames": 1658,
+      "frame_rejection_rate": 0.9282,
+      "event_rejection_rate": 0.9194
+    },
+    {
+      "dataset": "Metrica Game 2 (raw)",
+      "flyby_events": 353,
+      "flyby_frames": 1739,
+      "frame_rejection_rate": 0.9339,
+      "event_rejection_rate": 0.9348
+    },
+    {
+      "dataset": "Metrica Game 3 (raw)",
+      "flyby_events": 404,
+      "flyby_frames": 2185,
+      "frame_rejection_rate": 0.8998,
+      "event_rejection_rate": 0.9035
+    },
+    {
+      "dataset": "DFL_J03WMX (Harmonized GT)",
+      "flyby_events": 452,
+      "flyby_frames": 1671,
+      "frame_rejection_rate": 0.599,
+      "event_rejection_rate": 0.5708
+    },
+    {
+      "dataset": "DFL_J03WN1 (Harmonized GT)",
+      "flyby_events": 463,
+      "flyby_frames": 1769,
+      "frame_rejection_rate": 0.5551,
+      "event_rejection_rate": 0.5421
+    },
+    {
+      "dataset": "SC_1886347 (Broadcast-Det)",
+      "flyby_events": 383,
+      "flyby_frames": 1756,
+      "frame_rejection_rate": 0.615,
+      "event_rejection_rate": 0.5979
+    },
+    {
+      "dataset": "SC_1899585 (Broadcast-Det)",
+      "flyby_events": 351,
+      "flyby_frames": 1616,
+      "frame_rejection_rate": 0.5594,
+      "event_rejection_rate": 0.5556
+    }
+  ]
+}

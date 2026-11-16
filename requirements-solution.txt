@@ -1,0 +1,12 @@
+# Dependencies for solution/touch_possession.py, solution/whistle_detector.py,
+# solution/referee_pose_detector.py, solution/cross_validate.py, and solution/multi_dataset_experiment.py
+#   pip install -r requirements-solution.txt
+numpy
+pandas
+scipy
+scikit-learn
+numba
+av
+opencv-python
+torch
+ultralytics

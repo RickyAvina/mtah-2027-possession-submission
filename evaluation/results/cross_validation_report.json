@@ -1,0 +1,876 @@
+{
+  "elapsed_sec": 117.4,
+  "strict_holdout_excluded": [
+    11185,
+    18685
+  ],
+  "self_calibrated_non_holdout_stats": {
+    "slowdown_p85_thresh": 1.9525916576385498,
+    "whistle_active_pv_thresh": 1.9621009826660156,
+    "coll_accel_thresh": 0.892706373333931,
+    "whistle_high_thresh": 0.3782053045928478,
+    "whistle_sust_thresh": 0.30256424367427825
+  },
+  "player_team_classifier_5fold_cv": [
+    {
+      "fold": "Fold 1 (H1 18685..54668)",
+      "raw_corrupted_acc": 0.9192,
+      "cv_recovered_acc": 1.0,
+      "n_eval_observations": 65445
+    },
+    {
+      "fold": "Fold 2 (H1 54668..90651)",
+      "raw_corrupted_acc": 0.9868,
+      "cv_recovered_acc": 0.9977,
+      "n_eval_observations": 70318
+    },
+    {
+      "fold": "Fold 3 (H2 110808..137271)",
+      "raw_corrupted_acc": 0.8926,
+      "cv_recovered_acc": 0.9999,
+      "n_eval_observations": 44089
+    },
+    {
+      "fold": "Fold 4 (H2 137271..163734)",
+      "raw_corrupted_acc": 0.9892,
+      "cv_recovered_acc": 0.9977,
+      "n_eval_observations": 51950
+    },
+    {
+      "fold": "Fold 5 (H2 163734..190197)",
+      "raw_corrupted_acc": 0.8692,
+      "cv_recovered_acc": 0.9976,
+      "n_eval_observations": 50885
+    }
+  ],
+  "bar_ath_non_public_5fold_cv": [
+    {
+      "fold": "Fold 1 (H1 18685..54668)",
+      "cal_stats": {
+        "slowdown_p85_thresh": 2.0029,
+        "whistle_active_pv_thresh": 2.0109,
+        "coll_accel_thresh": 0.9019,
+        "whistle_high_thresh": 0.397,
+        "whistle_sust_thresh": 0.3176
+      },
+      "goal_stop_acc": 1.0,
+      "phase_team_acc": 0.785,
+      "setpiece_stop_recall": 0.8571,
+      "spells_per_min": 4.25
+    },
+    {
+      "fold": "Fold 2 (H1 54668..90651)",
+      "cal_stats": {
+        "slowdown_p85_thresh": 1.9357,
+        "whistle_active_pv_thresh": 1.9323,
+        "coll_accel_thresh": 0.8776,
+        "whistle_high_thresh": 0.3494,
+        "whistle_sust_thresh": 0.2795
+      },
+      "goal_stop_acc": 1.0,
+      "phase_team_acc": 0.74,
+      "setpiece_stop_recall": 1.0,
+      "spells_per_min": 2.54
+    },
+    {
+      "fold": "Fold 3 (H2 110808..137271)",
+      "cal_stats": {
+        "slowdown_p85_thresh": 2.0088,
+        "whistle_active_pv_thresh": 1.9819,
+        "coll_accel_thresh": 0.8753,
+        "whistle_high_thresh": 0.3771,
+        "whistle_sust_thresh": 0.3017
+      },
+      "goal_stop_acc": 1.0,
+      "phase_team_acc": 0.7475,
+      "setpiece_stop_recall": 0.875,
+      "spells_per_min": 3.85
+    },
+    {
+      "fold": "Fold 4 (H2 137271..163734)",
+      "cal_stats": {
+        "slowdown_p85_thresh": 1.8874,
+        "whistle_active_pv_thresh": 1.9741,
+        "coll_accel_thresh": 0.9093,
+        "whistle_high_thresh": 0.3768,
+        "whistle_sust_thresh": 0.3015
+      },
+      "goal_stop_acc": 1.0,
+      "phase_team_acc": 0.7091,
+      "setpiece_stop_recall": 1.0,
+      "spells_per_min": 3.63
+    },
+    {
+      "fold": "Fold 5 (H2 163734..190197)",
+      "cal_stats": {
+        "slowdown_p85_thresh": 1.9481,
+        "whistle_active_pv_thresh": 1.9204,
+        "coll_accel_thresh": 0.8984,
+        "whistle_high_thresh": 0.3877,
+        "whistle_sust_thresh": 0.3102
+      },
+      "goal_stop_acc": 1.0,
+      "phase_team_acc": 0.761,
+      "setpiece_stop_recall": 0.9231,
+      "spells_per_min": 4.19
+    }
+  ],
+  "external_metrica_3fold_logo_cv": [
+    {
+      "test_game": 1,
+      "selected_params": {
+        "touch_radius": 1.605,
+        "dribble_radius_ratio": 0.61,
+        "max_dribble_speed": 4.374,
+        "co_moving_rel_ratio": 0.53,
+        "min_dwell_frames": 15,
+        "acc_threshold": 11.247,
+        "dir_threshold": 0.43,
+        "contested_margin": 0.42,
+        "min_sandwich_frames": 69
+      },
+      "raw_spell_f1": 0.6821,
+      "raw_macro_f1": 0.8532,
+      "aug_spell_f1": 0.5257,
+      "aug_macro_f1": 0.7373
+    },
+    {
+      "test_game": 2,
+      "selected_params": {
+        "touch_radius": 1.605,
+        "dribble_radius_ratio": 0.61,
+        "max_dribble_speed": 4.374,
+        "co_moving_rel_ratio": 0.53,
+        "min_dwell_frames": 15,
+        "acc_threshold": 11.247,
+        "dir_threshold": 0.43,
+        "contested_margin": 0.42,
+        "min_sandwich_frames": 69
+      },
+      "raw_spell_f1": 0.6514,
+      "raw_macro_f1": 0.878,
+      "aug_spell_f1": 0.438,
+      "aug_macro_f1": 0.7583
+    },
+    {
+      "test_game": 3,
+      "selected_params": {
+        "touch_radius": 1.798,
+        "dribble_radius_ratio": 0.61,
+        "max_dribble_speed": 4.487,
+        "co_moving_rel_ratio": 0.53,
+        "min_dwell_frames": 14,
+        "acc_threshold": 12.122,
+        "dir_threshold": 0.43,
+        "contested_margin": 0.42,
+        "min_sandwich_frames": 59
+      },
+      "raw_spell_f1": 0.6627,
+      "raw_macro_f1": 0.8804,
+      "aug_spell_f1": 0.6478,
+      "aug_macro_f1": 0.8603
+    }
+  ],
+  "non_contact_2d_flyby_benchmark": {
+    "real_match_flybys": [
+      {
+        "dataset": "BAR-ATH Public Slice",
+        "flyby_events": 16,
+        "flyby_frames": 75,
+        "frame_rejection_rate": 1.0,
+        "event_rejection_rate": 1.0
+      },
+      {
+        "dataset": "Metrica Game 1 (raw)",
+        "flyby_events": 335,
+        "flyby_frames": 1658,
+        "frame_rejection_rate": 0.9282,
+        "event_rejection_rate": 0.9194
+      },
+      {
+        "dataset": "Metrica Game 2 (raw)",
+        "flyby_events": 353,
+        "flyby_frames": 1739,
+        "frame_rejection_rate": 0.9339,
+        "event_rejection_rate": 0.9348
+      },
+      {
+        "dataset": "Metrica Game 3 (raw)",
+        "flyby_events": 404,
+        "flyby_frames": 2185,
+        "frame_rejection_rate": 0.8998,
+        "event_rejection_rate": 0.9035
+      }
+    ],
+    "synthetic_flyby_stress": [
+      {
+        "dataset": "BAR-ATH Holdout",
+        "injected_events": 56,
+        "injected_frames": 123,
+        "flyby_immunity_rate": 1.0,
+        "vs_gt_rejection_rate": 1.0
+      },
+      {
+        "dataset": "Metrica Game 1 H1",
+        "injected_events": 347,
+        "injected_frames": 862,
+        "flyby_immunity_rate": 1.0,
+        "vs_gt_rejection_rate": 0.8654
+      },
+      {
+        "dataset": "Metrica Game 2 H1",
+        "injected_events": 425,
+        "injected_frames": 991,
+        "flyby_immunity_rate": 0.997,
+        "vs_gt_rejection_rate": 0.8981
+      },
+      {
+        "dataset": "Metrica Game 3 H1",
+        "injected_events": 479,
+        "injected_frames": 1152,
+        "flyby_immunity_rate": 0.9957,
+        "vs_gt_rejection_rate": 0.8672
+      }
+    ]
+  },
+  "blind_public_holdout_evaluation": {
+    "macro_f1": 0.9917307979178592,
+    "spell_f1_mean": 1.0,
+    "spell_f1_at_headline": 1.0,
+    "spell_iou_headline": 0.5,
+    "spell_bootstrap_low": null,
+    "spell_bootstrap_high": null,
+    "n_gt_spells": 17,
+    "n_pred_spells": 17,
+    "spell_count_error": 0,
+    "mean_spell_duration_s": 14.181176470588234,
+    "gt_mean_spell_duration_s": 14.190588235294117,
+    "accuracy": 0.9910666666666667,
+    "kappa": 0.9858538044032421,
+    "alive_dead_f1": 0.9990048100845911,
+    "team_acc_gt_alive": 0.9895539711490632,
+    "team_acc_both_alive": 0.9908683380375228,
+    "gt_home_share": 0.5727076770021555,
+    "pred_home_share": 0.5737514518002322,
+    "share_err": 0.0010437747980767131,
+    "share_defined": true,
+    "n_gt_segments": 21,
+    "n_pred_segments": 21,
+    "fragmentation": 1.0,
+    "n_frames": 199319,
+    "n_graded": 7500,
+    "n_abstain_on_graded": 0,
+    "bootstrap_low": null,
+    "bootstrap_high": null,
+    "bootstrap_n": 0,
+    "confusion": [
+      [
+        3426,
+        24,
+        4,
+        0
+      ],
+      [
+        31,
+        2542,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        1465,
+        0
+      ],
+      [
+        46646,
+        32621,
+        72088,
+        40464
+      ]
+    ],
+    "per_class": {
+      "H": {
+        "precision": 0.9907460960092539,
+        "recall": 0.9918934568616097,
+        "f1": 0.9913194444444444,
+        "support": 3454
+      },
+      "A": {
+        "precision": 0.9894900739587388,
+        "recall": 0.986418315871168,
+        "f1": 0.9879518072289156,
+        "support": 2577
+      },
+      "D": {
+        "precision": 0.9945689069925322,
+        "recall": 0.9972770592239619,
+        "f1": 0.9959211420802175,
+        "support": 1469
+      }
+    },
+    "transitions": {
+      "12": {
+        "precision": 0.95,
+        "recall": 0.95,
+        "f1": 0.9500000000000001,
+        "n_gt": 20,
+        "n_pred": 20,
+        "n_matched": 19,
+        "n_missed": 1,
+        "n_spurious": 1,
+        "n_ambiguous": 0,
+        "mean_latency": -2.1052631578947367,
+        "median_latency": -1.0,
+        "mean_abs_latency": 2.8421052631578947,
+        "p90_abs_latency": 7.0,
+        "pairs": [
+          [
+            [
+              11351,
+              1,
+              0
+            ],
+            [
+              11351,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              11624,
+              1,
+              0
+            ],
+            [
+              11630,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              12989,
+              2,
+              0
+            ],
+            [
+              12988,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              13785,
+              1,
+              0
+            ],
+            [
+              13776,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              15346,
+              1,
+              0
+            ],
+            [
+              15345,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              15766,
+              1,
+              0
+            ],
+            [
+              15763,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              17293,
+              1,
+              0
+            ],
+            [
+              17288,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              18389,
+              2,
+              0
+            ],
+            [
+              18390,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              11553,
+              0,
+              1
+            ],
+            [
+              11546,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              13704,
+              0,
+              1
+            ],
+            [
+              13700,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              14846,
+              0,
+              1
+            ],
+            [
+              14846,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              15365,
+              0,
+              1
+            ],
+            [
+              15365,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              15799,
+              0,
+              1
+            ],
+            [
+              15792,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              16400,
+              2,
+              1
+            ],
+            [
+              16400,
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              17838,
+              2,
+              1
+            ],
+            [
+              17835,
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              12851,
+              1,
+              2
+            ],
+            [
+              12850,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              15889,
+              1,
+              2
+            ],
+            [
+              15887,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              17380,
+              0,
+              2
+            ],
+            [
+              17377,
+              0,
+              2
+            ]
+          ],
+          [
+            [
+              18027,
+              1,
+              2
+            ],
+            [
+              18026,
+              1,
+              2
+            ]
+          ]
+        ],
+        "missed": [
+          [
+            12665,
+            0,
+            1
+          ]
+        ],
+        "spurious": [
+          [
+            12678,
+            0,
+            1
+          ]
+        ]
+      },
+      "25": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_gt": 20,
+        "n_pred": 20,
+        "n_matched": 20,
+        "n_missed": 0,
+        "n_spurious": 0,
+        "n_ambiguous": 0,
+        "mean_latency": -1.35,
+        "median_latency": -1.0,
+        "mean_abs_latency": 3.35,
+        "p90_abs_latency": 7.200000000000003,
+        "pairs": [
+          [
+            [
+              11351,
+              1,
+              0
+            ],
+            [
+              11351,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              11624,
+              1,
+              0
+            ],
+            [
+              11630,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              12989,
+              2,
+              0
+            ],
+            [
+              12988,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              13785,
+              1,
+              0
+            ],
+            [
+              13776,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              15346,
+              1,
+              0
+            ],
+            [
+              15345,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              15766,
+              1,
+              0
+            ],
+            [
+              15763,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              17293,
+              1,
+              0
+            ],
+            [
+              17288,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              18389,
+              2,
+              0
+            ],
+            [
+              18390,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              11553,
+              0,
+              1
+            ],
+            [
+              11546,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              12665,
+              0,
+              1
+            ],
+            [
+              12678,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              13704,
+              0,
+              1
+            ],
+            [
+              13700,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              14846,
+              0,
+              1
+            ],
+            [
+              14846,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              15365,
+              0,
+              1
+            ],
+            [
+              15365,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              15799,
+              0,
+              1
+            ],
+            [
+              15792,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              16400,
+              2,
+              1
+            ],
+            [
+              16400,
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              17838,
+              2,
+              1
+            ],
+            [
+              17835,
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              12851,
+              1,
+              2
+            ],
+            [
+              12850,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              15889,
+              1,
+              2
+            ],
+            [
+              15887,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              17380,
+              0,
+              2
+            ],
+            [
+              17377,
+              0,
+              2
+            ]
+          ],
+          [
+            [
+              18027,
+              1,
+              2
+            ],
+            [
+              18026,
+              1,
+              2
+            ]
+          ]
+        ],
+        "missed": [],
+        "spurious": []
+      }
+    },
+    "spell_f1": {
+      "0.3": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_matched": 17,
+        "n_spurious": 0,
+        "n_missed": 0
+      },
+      "0.4": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_matched": 17,
+        "n_spurious": 0,
+        "n_missed": 0
+      },
+      "0.5": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_matched": 17,
+        "n_spurious": 0,
+        "n_missed": 0
+      },
+      "0.6": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_matched": 17,
+        "n_spurious": 0,
+        "n_missed": 0
+      },
+      "0.7": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_matched": 17,
+        "n_spurious": 0,
+        "n_missed": 0
+      }
+    },
+    "gt_home_share_spells": 0.5727076770021555
+  }
+}
